@@ -9,3 +9,9 @@ However, raid is more beneficial when implemented as a hardware raid. Software r
 
 Raid is not always useful, especially in software raid coupled with hardware raid, as it creates unnecessry #overhead and only has specific edge cases where there is a need for such a implementation. Detecting a software #raid and its values cann help to monitor reduced throughput, increased latency,reduced efficency, or lack of #storage.
 
+## Rootshell.sh
+This sensor script helps to find the default shell of a user. The echo $SHELL is not accurate as it returns the #current running shell. If the need to find the base shell exists, this is found in the /etc/passwd user #directory.
+
+By using getent, we can parse the file to the last line of the user, as the last line will always be #the root shell. The delimiters of this is the colon(:).
+
+
