@@ -14,4 +14,9 @@ This sensor script helps to find the default shell of a user. The echo $SHELL is
 
 By using getent, we can parse the file to the last line of the user, as the last line will always be #the root shell. The delimiters of this is the colon(:).
 
+## VGA.py
+Returns graphics card/vga adapter, which is found in the result of the lspci command. 
+Parsing this for VGA will give the desired card value. 
+this result is also represented with a sepperate statement for Windows systems.
+
 
