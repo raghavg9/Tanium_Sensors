@@ -1,4 +1,4 @@
-# Tanium_Sensors
+# Tanium Sensors
 Building custom sensors to work on Tanium systems for endpoint management
 
 ## Raid.py
